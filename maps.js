@@ -63,31 +63,46 @@
 
 // cast.set("Mackenzie Foy", "Young Murph");
 
-let actors = new Map(); // Code will be tested with different actors
+// let actors = new Map(); // Code will be tested with different actors
 
-actors.set("Elijah Wood", {
-  movie: "The Lord of the Rings",
-  role: "Frodo Baggins",
-});
-actors.set("Orlando Bloom", {
-  movie: "Pirates of the Caribbean",
-  role: "Will Turner",
-});
-actors.set("Matthew McConaughey", { movie: "Interstellar", role: "Cooper" });
-actors.set("Michael Connor Humphreys", {
-  movie: "Forrest Gump",
-  role: "Young Forrest Gump",
-});
+// actors.set("Elijah Wood", {
+//   movie: "The Lord of the Rings",
+//   role: "Frodo Baggins",
+// });
+// actors.set("Orlando Bloom", {
+//   movie: "Pirates of the Caribbean",
+//   role: "Will Turner",
+// });
+// actors.set("Matthew McConaughey", { movie: "Interstellar", role: "Cooper" });
+// actors.set("Michael Connor Humphreys", {
+//   movie: "Forrest Gump",
+//   role: "Young Forrest Gump",
+// });
 
-function actorInfo(actorName, actors) {
-  //Define a function named actorInfo() that takes an actor name and actors map as arguments and outputs "{actorName} plays {role} in {movie}". If the actor is not found, the method outputs "Actor not found". Ex: actorInfo("Matthew McConaughey", actors) outputs "Matthew McConaughey plays Cooper in Interstellar" and actorInfo("Nicole Kidman", actors) outputs "Actor not found".
+// function actorInfo(actorName, actors) {
+//   //Define a function named actorInfo() that takes an actor name and actors map as arguments and outputs "{actorName} plays {role} in {movie}". If the actor is not found, the method outputs "Actor not found". Ex: actorInfo("Matthew McConaughey", actors) outputs "Matthew McConaughey plays Cooper in Interstellar" and actorInfo("Nicole Kidman", actors) outputs "Actor not found".
 
-  if (actors.has(actorName)) {
-    let actor = actors.get(actorName);
-    return `${actorName} plays ${actor.role} in ${actor.movie}`;
-  } else {
-    return "Actor not found";
-  }
-}
+//   if (actors.has(actorName)) {
+//     console.log(
+//       `${actorName} plays ${actors.get(actorName).role} in ${actors.get(actorName).movie}`
+//     );
+//   } else {
+//     console.log("Actor not found");
+//   }
+// }
 
-actorInfo("Elijah Wood", actors);
+// Number of actors: 2
+// Actor: Elijah Wood, Role: Frodo Baggins
+// Actor: Orlando Bloom, Role: Will Turner */
+
+// let actors = new Map(); // Code will be tested with different actors
+
+// actors.set("Elijah Wood", { movie: "The Lord of the Rings", role: "Frodo Baggins" });
+// actors.set("Orlando Bloom", { movie: "Pirates of the Caribbean", role: "Will Turner" });
+
+// //Output the sentence "Number of actors: " followed by the number of actors. Then use a loop to output "Actor: {name}, Role: {role}" for each actor.
+
+// console.log(`Number of actors: ${actors.size}`);
+// for (let [key, value] of actors) {
+//   console.log(`Actor: ${key}, Role: ${value.role}`);
+// }
